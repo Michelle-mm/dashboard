@@ -30,7 +30,7 @@ export const Sidebar = ()=>{
                             <Link to="/" onClick={handleCloseSideBar}
                                 style={{color: currentColor}}
                                 className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
-                                <SiShopware /> <span>Shopping</span>
+                                <SiShopware /> <span>MY Dashboard</span>
                             </Link>
                             <TooltipComponent content="Menu" position="BottomCenter">
                                 <button

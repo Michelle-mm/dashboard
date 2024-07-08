@@ -7,10 +7,10 @@ import Tooltip from '@mui/material/Tooltip';
 export const Chat = () => {
     const {currentColor, isClicked, setIsClicked} = useStateContext();
     return (
-        <div className="nav-item border-2 absolute right-5 md:right-52 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96"
+        <div className="nav-item border-1 absolute right-5 md:right-52 top-16 bg-white/30 backdrop-blur-md dark:bg-[#42464D] p-8 rounded-lg w-96"
             style={{borderColor: currentColor, opcaity:1}}>
             <div className="flex justify-between">
-                <p className="text-2xl font-semibold">Messages</p>
+                <p className="text-2xl font-semibold" style={{color: currentColor}}>Messages</p>
                 <Tooltip title="Close" arrow>
                     <button className="flex justify-center items-center px-2 hover:bg-red-200 hover:rounded-full text-white font-bold"
                             onClick={()=>setIsClicked(false)}>

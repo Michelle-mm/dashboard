@@ -9,11 +9,11 @@ export const Cart = () => {
     const {currentColor, isClicked, setIsClicked} = useStateContext();
     return (
         <div className="bg-half-transparent w-full fixed nav-item top-0 right-0 "
-            style={{borderColor: currentColor, opcaity:1}}>
+            style={{opcaity:1}}>
             <div className="float-right h-screen  duration-1000 ease-in-out dark:text-gray-200 transition-all dark:bg-[#484B52] bg-white md:w-400 p-8">
                 <div className="flex justify-between items-center">
                     <p className="text-2xl font-semibold"
-                        style={{borderColor: currentColor}}>
+                        style={{color: currentColor}}>
                             Shopping Cart
                     </p>
                     <Tooltip title="Close" arrow>

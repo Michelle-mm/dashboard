@@ -9,10 +9,11 @@ export const Notification = () => {
   const { currentColor } = useStateContext();
 
   return (
-    <div className="nav-item absolute right-5 md:right-40 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
+    <div className="nav-item absolute right-5 border-1 md:right-40 top-16 bg-white/30 backdrop-blur-md dark:bg-[#42464D] p-8 rounded-lg w-96"
+    style={{borderColor: currentColor}}>
       <div className="flex justify-between items-center">
         <div className="flex gap-3">
-          <p className="font-semibold text-lg dark:text-gray-200">Notifications</p>
+          <p className="font-semibold text-2xl dark:text-gray-200" style={{color: currentColor}}>Notifications</p>
           <button type="button" className="text-white text-xs rounded p-1 px-2 bg-orange-theme "> 5 New</button>
         </div>
         <Button icon={<MdOutlineCancel />} color="rgb(153, 171, 180)" bgHoverColor="light-gray" size="2xl" borderRadius="50%" />

@@ -14,7 +14,7 @@ export const Ecommerce = () => {
   return (
     <div className="mt-24">
       <div className="flex flex-wrap lg:flex-nowrap justify-center items-center">
-        <div className="bg-slate-100 dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-96 lg:h-72 p-8 pt-9 m-3 ">
+        <div className="bg-slate-100 dark:text-gray-200 dark:bg-secondary-dark-bg h-48 rounded-xl w-full md:flex-1 lg:w-96 lg:h-72 p-8 pt-9 m-3 ">
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-400">Earnings</p>

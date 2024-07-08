@@ -4,14 +4,14 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { Button } from '.';
 import { userProfileData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
-import avatar from '../data/avatar.jpg';
+import avatar from '../data/avatar0.png';
 import { TiDelete } from "react-icons/ti";
 import Tooltip from '@mui/material/Tooltip';
 
 export const UserProfile = () => {
     const { currentColor, setIsClicked } = useStateContext();
     return (
-        <div className="nav-item absolute right-1 top-16 border-2 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96"
+        <div className="nav-item absolute right-1 top-16 border-2 bg-white/30 backdrop-blur-md dark:bg-[#42464D] p-8 rounded-lg w-96"
             style={{borderColor: currentColor}}>
             <div className="flex justify-between items-center">
                 <p className="font-semibold text-2xl dark:text-gray-200"
